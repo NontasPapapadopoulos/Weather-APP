@@ -1,0 +1,23 @@
+<%- include("header") -%>
+
+
+    <div class="main ">
+        <h2>Weather forecast</h2>
+        <h1>The weather has currently <%= description %>
+        </h1>
+        <h2>The temperature in <%= cityName %> is <%= temperature %> degrees Celcius. </h2>
+        <img class="feedbackIMG" src="<%= imageURL %>">
+
+        <form action="/" method="post">
+            <label for="cityInput" class="label">City Name:</label>
+            <input type="text" name="cityName" id="cityInput" class="input">
+            <button type="submit" class="btn btn-info">Go</button>
+        </form>
+
+    </div>
+
+
+
+    </body>
+
+    </html>
